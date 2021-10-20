@@ -1,4 +1,4 @@
-import { DurationMsec, FeedId, MessageCount, SubfeedHash, SubfeedMessage, SubfeedPosition } from "commonInterface/kacheryTypes"
+import { DurationMsec, FeedId, MessageCount, SubfeedHash, SubfeedMessage, subfeedPosition, SubfeedPosition } from "commonInterface/kacheryTypes"
 import randomAlphaString from "commonInterface/util/randomAlphaString"
 import { isSubscribeToSubfeedResponse, SubscribeToSubfeedRequest } from "./viewInterface/FigurlRequestTypes"
 import { NewSubfeedMessagesMessage } from "./viewInterface/MessageToChildTypes"
@@ -17,9 +17,7 @@ export class Subfeed {
             if (!isSubscribeToSubfeedResponse(resp)) {
                 throw Error('Invalid response to subscribeToSubfeed')
             }
-            if (this.#localMessages.length === 0) {
-                this.#localMessages = resp.messages
-            }
+            this._handleNewMessages(subfeedPosition(0), resp.messages)
         })
     }
     async waitForMessages(a: {position: SubfeedPosition, maxNumMessages: MessageCount, waitMsec: DurationMsec}): Promise<SubfeedMessage[]> {
