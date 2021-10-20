@@ -1,5 +1,5 @@
-import { DurationMsec, FeedId, MessageCount, SubfeedHash, SubfeedMessage, subfeedPosition, SubfeedPosition } from "commonInterface/kacheryTypes"
-import randomAlphaString from "commonInterface/util/randomAlphaString"
+import { DurationMsec, FeedId, MessageCount, SubfeedHash, SubfeedMessage, subfeedPosition, SubfeedPosition } from "./viewInterface/kacheryTypes"
+import randomAlphaString from "./util/randomAlphaString"
 import { isSubscribeToSubfeedResponse, SubscribeToSubfeedRequest } from "./viewInterface/FigurlRequestTypes"
 import { NewSubfeedMessagesMessage } from "./viewInterface/MessageToChildTypes"
 import sendRequestToParent from "./sendRequestToParent"
@@ -45,7 +45,7 @@ export class Subfeed {
         })
     }
     getLocalMessages() {
-        return this.#localMessages
+        return [...this.#localMessages] // important to return a copy here
     }
     _handleNewMessages(position: SubfeedPosition, messages: SubfeedMessage[]) {
         const messages2 = messages.slice(Number(position) - this.#localMessages.length)

@@ -1,7 +1,7 @@
 import { JSONObject, sha1OfObject, SubfeedHash } from 'commonInterface/kacheryTypes';
 import { initiateTask } from 'figurl';
 import {useSubfeedReducer} from 'figurl';
-import usePlugins from 'figurl/labbox-react/extensionSystem/usePlugins';
+import usePlugins from 'labbox-react/extensionSystem/usePlugins';
 import Hyperlink from 'commonComponents/Hyperlink/Hyperlink';
 import React, { useCallback, useEffect, useMemo, useReducer } from 'react';
 import { parseWorkspaceUri } from '../../../../gui/pluginInterface/misc';

@@ -1,6 +1,5 @@
-import { TaskFunctionId, TaskFunctionType, TaskKwargs } from "commonInterface/kacheryTypes"
-import { Task } from "figurl"
-import initiateTask from "./initiateTask"
+import initiateTask, { Task } from "./initiateTask"
+import { TaskFunctionId, TaskFunctionType, TaskKwargs } from "./viewInterface/kacheryTypes"
 
 const runTaskAsync = async <ReturnType>(functionId: TaskFunctionId | string, kwargs: TaskKwargs | { [key: string]: any }, functionType: TaskFunctionType, opts: { queryUseCache?: boolean }): Promise<ReturnType> => {
   return new Promise((resolve, reject) => {

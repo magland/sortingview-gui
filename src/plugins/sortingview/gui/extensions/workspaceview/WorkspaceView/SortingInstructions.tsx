@@ -1,4 +1,4 @@
-import Expandable from "figurl/labbox-react/components/Expandable/Expandable";
+import Expandable from "commonComponents/Expandable/Expandable";
 import Markdown from 'commonComponents/Markdown/Markdown';
 import React, { FunctionComponent, useCallback, useState } from 'react';
 import spykingcircus_example_py from './sortingExamples/spykingcircus_example.py.gen';

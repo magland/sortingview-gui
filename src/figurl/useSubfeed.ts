@@ -1,7 +1,7 @@
-import { FeedId, messageCount, sha1OfString, SubfeedHash, SubfeedMessage, subfeedPosition, unscaledDurationMsec } from "commonInterface/kacheryTypes";
-import { sleepMsec } from "commonInterface/util";
+import { FeedId, messageCount, sha1OfString, SubfeedHash, SubfeedMessage, subfeedPosition, unscaledDurationMsec } from "./viewInterface/kacheryTypes";
 import { useEffect, useState } from "react";
 import subfeedManager, { Subfeed } from "./subfeedManager";
+import { sleepMsec } from "./util/sleepMsec";
 
 export const parseSubfeedUri = (subfeedUri: string) => {
     const a = subfeedUri.split('/')
@@ -36,7 +36,7 @@ const useSubfeed = (args: {feedId?: FeedId, subfeedHash?: SubfeedHash, subfeedUr
         if (!subfeedHash) return
         let valid = true
         ;(async () => {
-            const subfeed = await subfeedManager.loadSubfeed(feedId, subfeedHash)
+            const subfeed = subfeedManager.loadSubfeed(feedId, subfeedHash)
             setSubfeed(subfeed)
             let internalPosition = 0
             while (valid) {

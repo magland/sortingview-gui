@@ -1,4 +1,4 @@
-import { FeedId, JSONStringifyDeterministic, SubfeedHash } from 'commonInterface/kacheryTypes'
+import { FeedId, JSONStringifyDeterministic, SubfeedHash } from './viewInterface/kacheryTypes'
 import { useMemo, useRef } from 'react'
 import useSubfeed, { parseSubfeedUri } from './useSubfeed'
 

@@ -1,5 +1,5 @@
-import { funcToTransform } from "figurl/labbox-react/components/CanvasWidget"
-import { Brush, CanvasPainter, Font, Pen } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter"
+import { funcToTransform } from "commonComponents/CanvasWidget"
+import { Brush, CanvasPainter, Font, Pen } from "commonComponents/CanvasWidget/CanvasPainter"
 import { Recording, Sorting } from "plugins/sortingview/gui/pluginInterface"
 import getAxisTicks, { AxisTick } from "plugins/sortingview/gui/util/getAxisTicks"
 import { getArrayMax, getArrayMin } from "../../common/utility"

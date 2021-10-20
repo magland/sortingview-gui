@@ -1,4 +1,4 @@
-import { TaskFunctionId, TaskKwargs } from "commonInterface/kacheryTypes"
+import { TaskFunctionId, TaskKwargs } from "./viewInterface/kacheryTypes"
 import runTaskAsync from "./runTaskAsync"
 
 const runQueryTaskAsync = async <ReturnType>(functionId: TaskFunctionId | string, kwargs: TaskKwargs | { [key: string]: any }, opts: { useCache: boolean }): Promise<ReturnType> => {

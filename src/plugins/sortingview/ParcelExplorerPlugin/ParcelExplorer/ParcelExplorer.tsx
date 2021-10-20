@@ -1,7 +1,7 @@
 import { faPencilAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser';
-import Expandable from 'figurl/labbox-react/components/Expandable/Expandable';
+import Expandable from 'commonComponents/Expandable/Expandable';
 import Splitter from 'commonComponents/Splitter/Splitter';
 import React, { FunctionComponent, useCallback, useMemo, useReducer } from 'react';
 import { ParcelSorting } from '../ParcelExplorerPlugin';

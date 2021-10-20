@@ -1,5 +1,5 @@
 import useVisible from 'commonComponents/useVisible'
-import { CanvasPainter, PainterPath } from 'figurl/labbox-react/components/CanvasWidget/CanvasPainter'
+import { CanvasPainter, PainterPath } from 'commonComponents/CanvasWidget/CanvasPainter'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { FaArrowDown, FaArrowUp, FaEye, FaRegTimesCircle } from 'react-icons/fa'
 import { RecordingSelection, RecordingSelectionDispatch, recordingSelectionReducer, SortingSelection } from '../../../pluginInterface'

@@ -1,4 +1,4 @@
-import { ErrorMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskKwargs, TaskStatus } from "commonInterface/kacheryTypes";
+import { ErrorMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskKwargs, TaskStatus } from "./viewInterface/kacheryTypes";
 import { InitiateTaskRequest, isInitiateTaskResponse } from "./viewInterface/FigurlRequestTypes";
 import { TaskStatusUpdateMessage } from "./viewInterface/MessageToChildTypes";
 import sendRequestToParent from "./sendRequestToParent";

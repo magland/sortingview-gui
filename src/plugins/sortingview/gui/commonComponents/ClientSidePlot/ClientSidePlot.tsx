@@ -1,5 +1,5 @@
 import { Box, CircularProgress } from '@material-ui/core';
-import { CalculationPool } from '../../createCalculationPool';
+import { CalculationPool } from './createCalculationPool';
 import { runPureCalculationTaskAsync } from 'figurl';
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';

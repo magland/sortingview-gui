@@ -1,4 +1,4 @@
-import { ErrorMessage, FeedId, isArrayOf, isErrorMessage, isFeedId, isSubfeedHash, isSubfeedMessage, isTaskFunctionId, isTaskFunctionType, isTaskId, isTaskStatus, SubfeedHash, SubfeedMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskStatus } from "commonInterface/kacheryTypes"
+import { ErrorMessage, FeedId, isArrayOf, isErrorMessage, isFeedId, isSubfeedHash, isSubfeedMessage, isTaskFunctionId, isTaskFunctionType, isTaskId, isTaskStatus, SubfeedHash, SubfeedMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskStatus } from "./kacheryTypes"
 import validateObject, { isBoolean, isEqualTo, isOneOf, optional } from "./validateObject"
 
 // getFigureData

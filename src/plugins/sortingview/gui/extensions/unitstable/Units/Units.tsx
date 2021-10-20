@@ -1,8 +1,8 @@
 
 import { Button, Paper } from '@material-ui/core';
 import { runPureCalculationTaskAsync } from 'figurl';
-import usePlugins from 'figurl/labbox-react/extensionSystem/usePlugins';
-import sortByPriority from 'figurl/labbox-react/extensionSystem/sortByPriority';
+import usePlugins from 'labbox-react/extensionSystem/usePlugins';
+import sortByPriority from 'labbox-react/extensionSystem/sortByPriority';
 import React, { useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import { LabboxPlugin, Recording, sortingComparisonUnitMetricPlugins, SortingUnitMetricPlugin, sortingUnitMetricPlugins, SortingViewProps } from "../../../pluginInterface";
 import { SortingComparisonUnitMetricPlugin } from '../../../pluginInterface/SortingComparisonUnitMetricPlugin';

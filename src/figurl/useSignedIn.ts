@@ -1,5 +1,5 @@
-import { UserId } from "commonInterface/kacheryTypes"
-import randomAlphaString from "commonInterface/util/randomAlphaString"
+import { UserId } from "./viewInterface/kacheryTypes"
+import randomAlphaString from "./util/randomAlphaString"
 import { useEffect, useState } from "react"
 
 type UserInfo = {userId?: UserId, googleIdToken?: string}

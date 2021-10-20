@@ -1,7 +1,7 @@
-import { funcToTransform } from "figurl/labbox-react/components/CanvasWidget"
-import { CanvasPainter } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter"
-import { CanvasDragEvent, CanvasWidgetLayer, ClickEvent, ClickEventType, DiscreteMouseEventHandler, DragHandler, KeyboardEvent, KeyboardEventHandler, MousePresenceEvent, MousePresenceEventHandler, MousePresenceEventType, WheelEvent, WheelEventHandler } from "figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer"
-import { getInverseTransformationMatrix, TransformationMatrix, transformPoint, Vec2 } from "figurl/labbox-react/components/CanvasWidget/Geometry"
+import { funcToTransform } from "commonComponents/CanvasWidget"
+import { CanvasPainter } from "commonComponents/CanvasWidget/CanvasPainter"
+import { CanvasDragEvent, CanvasWidgetLayer, ClickEvent, ClickEventType, DiscreteMouseEventHandler, DragHandler, KeyboardEvent, KeyboardEventHandler, MousePresenceEvent, MousePresenceEventHandler, MousePresenceEventType, WheelEvent, WheelEventHandler } from "commonComponents/CanvasWidget/CanvasWidgetLayer"
+import { getInverseTransformationMatrix, TransformationMatrix, transformPoint, Vec2 } from "commonComponents/CanvasWidget/Geometry"
 import { sleepMsec } from "../../../pluginInterface/RecordingSelection"
 import { TimeWidgetLayerProps } from "./TimeWidgetLayerProps"
 

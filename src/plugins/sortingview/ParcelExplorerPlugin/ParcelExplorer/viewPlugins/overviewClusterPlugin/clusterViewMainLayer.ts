@@ -1,7 +1,7 @@
-import { funcToTransform } from "figurl/labbox-react/components/CanvasWidget"
-import { CanvasPainter } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter"
-import { CanvasWidgetLayer, ClickEvent, ClickEventModifiers, ClickEventType, DiscreteMouseEventHandler } from "figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer"
-import { Vec2 } from "figurl/labbox-react/components/CanvasWidget/Geometry"
+import { funcToTransform } from "commonComponents/CanvasWidget"
+import { CanvasPainter } from "commonComponents/CanvasWidget/CanvasPainter"
+import { CanvasWidgetLayer, ClickEvent, ClickEventModifiers, ClickEventType, DiscreteMouseEventHandler } from "commonComponents/CanvasWidget/CanvasWidgetLayer"
+import { Vec2 } from "commonComponents/CanvasWidget/Geometry"
 import { PointGroup } from "./ClusterWidget"
 
 export type LayerProps = {

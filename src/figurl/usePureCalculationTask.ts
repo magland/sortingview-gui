@@ -1,4 +1,4 @@
-import { TaskFunctionId, TaskKwargs } from "commonInterface/kacheryTypes";
+import { TaskFunctionId, TaskKwargs } from "./viewInterface/kacheryTypes";
 import useTask from "./useTask";
 
 const usePureCalculationTask = <ReturnType>(functionId: TaskFunctionId | string | undefined, kwargs: TaskKwargs | {[key: string]: any}, opts: {}) => {

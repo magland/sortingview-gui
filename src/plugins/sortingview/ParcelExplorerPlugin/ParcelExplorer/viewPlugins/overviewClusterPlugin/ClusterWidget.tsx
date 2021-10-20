@@ -1,5 +1,5 @@
-import CanvasWidget from 'figurl/labbox-react/components/CanvasWidget';
-import { ClickEventModifiers, useLayer, useLayers } from 'figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer';
+import CanvasWidget from 'commonComponents/CanvasWidget';
+import { ClickEventModifiers, useLayer, useLayers } from 'commonComponents/CanvasWidget/CanvasWidgetLayer';
 import React, { FunctionComponent, useCallback, useMemo, useState } from 'react';
 import { createClusterViewMainLayer, LayerProps } from './clusterViewMainLayer';
 import { createClusterViewSelectLayer } from './clusterViewSelectLayer';

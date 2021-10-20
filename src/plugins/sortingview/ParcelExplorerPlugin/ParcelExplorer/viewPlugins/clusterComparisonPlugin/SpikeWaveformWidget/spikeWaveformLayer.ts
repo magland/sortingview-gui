@@ -1,5 +1,5 @@
-import { CanvasPainter } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter"
-import { CanvasWidgetLayer } from "figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer"
+import { CanvasPainter } from "commonComponents/CanvasWidget/CanvasPainter"
+import { CanvasWidgetLayer } from "commonComponents/CanvasWidget/CanvasWidgetLayer"
 
 type LayerProps = {
     waveforms: number[][][] // L x T x M

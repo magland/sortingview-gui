@@ -1,5 +1,5 @@
-import { handleTaskStatusUpdate } from "figurl/initiateTask"
-import { handleNewSubfeedMessages } from "figurl/subfeedManager"
+import { handleTaskStatusUpdate } from "./initiateTask"
+import { handleNewSubfeedMessages } from "./subfeedManager"
 import { isMessageToChild } from "./viewInterface/MessageToChildTypes"
 import { handleFigurlResponse } from "./sendRequestToParent"
 import { handleSetCurrentUser } from "./useSignedIn"

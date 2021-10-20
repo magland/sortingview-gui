@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useMemo } from 'react';
-import CanvasWidget from 'figurl/labbox-react/components/CanvasWidget';
-import { useLayer, useLayers } from 'figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer';
-import { RectangularRegion } from 'figurl/labbox-react/components/CanvasWidget/Geometry';
+import CanvasWidget from 'commonComponents/CanvasWidget';
+import { useLayer, useLayers } from 'commonComponents/CanvasWidget/CanvasWidgetLayer';
+import { RectangularRegion } from 'commonComponents/CanvasWidget/Geometry';
 import { getArrayMax, getArrayMin } from '../../common/utility';
 import createClusterLayer, { ClusterLayerProps } from './clusterLayer';
 

@@ -4,8 +4,8 @@ import { Settings, SquareFoot, Visibility } from '@material-ui/icons'
 import GrainIcon from '@material-ui/icons/Grain'
 import OpenInBrowserIcon from '@material-ui/icons/OpenInBrowser'
 import { JSONStringifyDeterministic } from 'commonInterface/kacheryTypes'
-import usePlugins from 'figurl/labbox-react/extensionSystem/usePlugins'
-import Expandable from "figurl/labbox-react/components/Expandable/Expandable"
+import usePlugins from 'labbox-react/extensionSystem/usePlugins'
+import Expandable from "commonComponents/Expandable/Expandable"
 import Splitter from 'commonComponents/Splitter/Splitter'
 import React, { FunctionComponent, useCallback, useEffect, useMemo, useReducer, useState } from 'react'
 import { LabboxPlugin, SortingComparisonViewPlugin, SortingUnitViewPlugin, SortingViewPlugin, sortingViewPlugins, SortingViewProps } from "../../../pluginInterface"

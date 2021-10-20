@@ -1,4 +1,4 @@
-import Expandable from "figurl/labbox-react/components/Expandable/Expandable";
+import Expandable from "commonComponents/Expandable/Expandable";
 import Markdown from 'commonComponents/Markdown/Markdown';
 import React, { FunctionComponent, useCallback, useState } from 'react';
 import import_example_simulated_recording_py from './importExamples/import_example_simulated_recording.py.gen';

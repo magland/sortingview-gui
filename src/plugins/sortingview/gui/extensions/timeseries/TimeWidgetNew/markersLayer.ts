@@ -1,7 +1,7 @@
-import { funcToTransform } from 'figurl/labbox-react/components/CanvasWidget'
-import { CanvasPainter, Pen } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter"
-import { CanvasWidgetLayer } from "figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer"
-import { Vec2 } from "figurl/labbox-react/components/CanvasWidget/Geometry"
+import { funcToTransform } from 'commonComponents/CanvasWidget'
+import { CanvasPainter, Pen } from "commonComponents/CanvasWidget/CanvasPainter"
+import { CanvasWidgetLayer } from "commonComponents/CanvasWidget/CanvasWidgetLayer"
+import { Vec2 } from "commonComponents/CanvasWidget/Geometry"
 import { TimeWidgetLayerProps } from "./TimeWidgetLayerProps"
 
 type Layer = CanvasWidgetLayer<TimeWidgetLayerProps, LayerState>

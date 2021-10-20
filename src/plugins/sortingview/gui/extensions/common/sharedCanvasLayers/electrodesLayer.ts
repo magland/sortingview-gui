@@ -1,6 +1,6 @@
-import { CanvasPainter } from "figurl/labbox-react/components/CanvasWidget/CanvasPainter";
-import { CanvasDragEvent, CanvasWidgetLayer, ClickEvent, ClickEventType, DiscreteMouseEventHandler, DragHandler } from "figurl/labbox-react/components/CanvasWidget/CanvasWidgetLayer";
-import { pointIsInEllipse, RectangularRegion, rectangularRegionsIntersect } from "figurl/labbox-react/components/CanvasWidget/Geometry";
+import { CanvasPainter } from "commonComponents/CanvasWidget/CanvasPainter";
+import { CanvasDragEvent, CanvasWidgetLayer, ClickEvent, ClickEventType, DiscreteMouseEventHandler, DragHandler } from "commonComponents/CanvasWidget/CanvasWidgetLayer";
+import { pointIsInEllipse, RectangularRegion, rectangularRegionsIntersect } from "commonComponents/CanvasWidget/Geometry";
 import { RecordingSelectionDispatch } from '../../../pluginInterface';
 import { ActionItem, CheckboxItem, DividerItem, TextItem } from "../Toolbars";
 import setupElectrodes, { ElectrodeBox } from './setupElectrodes';

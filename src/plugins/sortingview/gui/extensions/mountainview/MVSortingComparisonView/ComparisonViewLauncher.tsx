@@ -1,5 +1,5 @@
-import usePlugins from "figurl/labbox-react/extensionSystem/usePlugins"
-import sortByPriority from "figurl/labbox-react/extensionSystem/sortByPriority"
+import usePlugins from "labbox-react/extensionSystem/usePlugins"
+import sortByPriority from "labbox-react/extensionSystem/sortByPriority"
 import { LabboxPlugin, SortingComparisonViewPlugin, sortingComparisonViewPlugins, SortingSelection } from "plugins/sortingview/gui/pluginInterface"
 import { FunctionComponent, useCallback } from "react"
 

@@ -1,7 +1,6 @@
-import { JSONStringifyDeterministic, TaskFunctionId, TaskFunctionType, TaskKwargs } from "commonInterface/kacheryTypes"
-import { initiateTask } from "figurl"
 import { useCallback, useEffect, useMemo, useState } from "react"
-import { Task } from "./initiateTask"
+import initiateTask, { Task } from "./initiateTask"
+import { JSONStringifyDeterministic, TaskFunctionId, TaskFunctionType, TaskKwargs } from "./viewInterface/kacheryTypes"
 
 const useTask = <ReturnType>(functionId: TaskFunctionId | string | undefined, kwargs: TaskKwargs | {[key: string]: any}, functionType: TaskFunctionType, opts: {queryUseCache?: boolean, queryFallbackToCache?: boolean}): {returnValue?: ReturnType, task?: Task<ReturnType>} => {
     const [task, setTask] = useState<Task<ReturnType> | undefined>(undefined)

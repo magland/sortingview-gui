@@ -1,8 +1,8 @@
-import { CalculationPool } from "figurl/kachery-react/createCalculationPool";
-import BasePlugin from "figurl/labbox-react/extensionSystem/BasePlugin";
-import { ExtensionContext } from "figurl/labbox-react/extensionSystem/ExtensionContext";
-import usePlugins from 'figurl/labbox-react/extensionSystem/usePlugins'
+import BasePlugin from "labbox-react/extensionSystem/BasePlugin";
+import { ExtensionContext } from "labbox-react/extensionSystem/ExtensionContext";
+import usePlugins from 'labbox-react/extensionSystem/usePlugins'
 import { FunctionComponent, useMemo } from "react";
+import { CalculationPool } from "../commonComponents/ClientSidePlot/createCalculationPool";
 import { RecordingViewPlugin } from "./RecordingViewPlugin";
 import { SortingComparisonUnitMetricPlugin } from "./SortingComparisonUnitMetricPlugin";
 import { SortingComparisonViewPlugin } from "./SortingComparisonViewPlugin";

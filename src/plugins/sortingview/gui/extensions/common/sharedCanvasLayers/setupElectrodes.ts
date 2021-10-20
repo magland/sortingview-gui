@@ -1,5 +1,5 @@
-import { funcToTransform } from 'figurl/labbox-react/components/CanvasWidget';
-import { getBoundingBoxForEllipse, getHeight, getWidth, RectangularRegion, TransformationMatrix, transformDistance, Vec2 } from 'figurl/labbox-react/components/CanvasWidget/Geometry';
+import { funcToTransform } from 'commonComponents/CanvasWidget';
+import { getBoundingBoxForEllipse, getHeight, getWidth, RectangularRegion, TransformationMatrix, transformDistance, Vec2 } from 'commonComponents/CanvasWidget/Geometry';
 import { norm } from 'mathjs';
 import { getArrayMax, getArrayMin } from '../utility';
 

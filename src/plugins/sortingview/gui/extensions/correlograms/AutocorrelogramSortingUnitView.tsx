@@ -1,7 +1,7 @@
-import ClientSidePlot from 'figurl/kachery-react/components/ClientSidePlot/ClientSidePlot'
-import { CalculationPool } from 'figurl/kachery-react/createCalculationPool'
 import sortingviewTaskFunctionIds from 'plugins/sortingview/sortingviewTaskFunctionIds'
 import React, { FunctionComponent } from 'react'
+import ClientSidePlot from '../../commonComponents/ClientSidePlot/ClientSidePlot'
+import { CalculationPool } from '../../commonComponents/ClientSidePlot/createCalculationPool'
 import { Sorting } from "../../pluginInterface"
 import Correlogram_rv from './Correlogram_ReactVis'
 
