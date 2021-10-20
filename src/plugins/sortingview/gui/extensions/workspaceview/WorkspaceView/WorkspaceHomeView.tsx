@@ -68,7 +68,7 @@ const WorkspaceHomeView: FunctionComponent<Props> = ({ width, height, workspace,
                 source={setWorkspacePermissionsMd}
                 substitute={{
                     'WORKSPACE_URI': workspaceUri,
-                    'USER': userId
+                    'USER': userId?.toString()
                 }}
             />
             <MarkdownDialog

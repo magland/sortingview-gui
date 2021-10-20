@@ -13,7 +13,7 @@ export interface BaseWorkspaceState {
 export const useCurrentUserWorkspacePermissions = (workspace: BaseWorkspaceState) => {
     const {userId} = useSignedIn()
     if (!userId) return {}
-    const p = workspace.userPermissions[userId]
+    const p = workspace.userPermissions[userId.toString()]
     if (!p) return {}
     return p
 }

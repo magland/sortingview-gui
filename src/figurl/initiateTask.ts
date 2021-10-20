@@ -1,6 +1,7 @@
-import { errorMessage, ErrorMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskKwargs, TaskStatus } from "commonInterface/kacheryTypes";
+import { ErrorMessage, TaskFunctionId, TaskFunctionType, TaskId, TaskKwargs, TaskStatus } from "commonInterface/kacheryTypes";
 import { InitiateTaskRequest, isInitiateTaskResponse } from "./viewInterface/FigurlRequestTypes";
-import sendRequestToParent from "./viewInterface/sendRequestToParent";
+import { TaskStatusUpdateMessage } from "./viewInterface/MessageToChildTypes";
+import sendRequestToParent from "./sendRequestToParent";
 
 const allTasks: {[key: string]: Task<any>} = {}
 
@@ -8,7 +9,7 @@ export class Task<ReturnType> {
     #onStatusChangedCallbacks: (() => void)[] = []
     #taskId: TaskId
     #status: TaskStatus
-    #errorMessage: ErrorMessage = errorMessage('')
+    #errorMessage?: ErrorMessage = undefined
     #result: ReturnType | undefined = undefined
     constructor(a: {taskId: TaskId, taskStatus: TaskStatus}) {
         this.#taskId = a.taskId
@@ -16,6 +17,9 @@ export class Task<ReturnType> {
     }
     onStatusChanged(cb: () => void) {
         this.#onStatusChangedCallbacks.push(cb)
+    }
+    public get taskId() {
+        return this.#taskId
     }
     public get status() {
         return this.#status
@@ -25,6 +29,17 @@ export class Task<ReturnType> {
     }
     public get result() {
         return this.#result
+    }
+    _handleStatusChange(status: TaskStatus, o: {errorMessage?: ErrorMessage, returnValue?: any}) {
+        if (status === this.#status) return
+        this.#status = status
+        if (status === 'error') {
+            this.#errorMessage = o.errorMessage
+        }
+        if (status === 'finished') {
+            this.#result = o.returnValue as any as ReturnType
+        }
+        this.#onStatusChangedCallbacks.forEach(cb => {cb()})
     }
 }
 
@@ -55,6 +70,14 @@ const initiateTask = async <ReturnType>(args: {functionId: TaskFunctionId | stri
     }
     t.onStatusChanged(onStatusChanged)
     return t
+}
+
+export const handleTaskStatusUpdate = (msg: TaskStatusUpdateMessage) => {
+    const {taskId, status, errorMessage, returnValue} = msg
+    if (taskId.toString() in allTasks) {
+        const task = allTasks[taskId.toString()]
+        task._handleStatusChange(status, {errorMessage, returnValue})
+    }
 }
 
 export default initiateTask

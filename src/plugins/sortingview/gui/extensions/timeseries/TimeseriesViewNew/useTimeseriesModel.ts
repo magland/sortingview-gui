@@ -1,8 +1,7 @@
-import { ChannelName } from "commonInterface/kacheryTypes"
 import { runPureCalculationTaskAsync, useFetchCache } from "figurl"
+import sortingviewTaskFunctionIds from "plugins/sortingview/sortingviewTaskFunctionIds"
 import { useMemo } from "react"
 import { RecordingInfo } from '../../../pluginInterface'
-import sortingviewTaskFunctionIds from "plugins/sortingview/sortingviewTaskFunctionIds"
 
 // it may be important to limit this when using a filter
 // const timeseriesCalculationPool = createCalculationPool({maxSimultaneous: 4, method: 'stack'})
