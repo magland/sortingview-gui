@@ -1,4 +1,5 @@
-import { runPureCalculationTaskAsync, useFetchCache } from "figurl"
+import { runPureCalculationTaskAsync } from "figurl"
+import useFetchCache from "plugins/sortingview/gui/commonComponents/useFetchCache"
 import sortingviewTaskFunctionIds from "plugins/sortingview/sortingviewTaskFunctionIds"
 import { useMemo } from "react"
 import { RecordingInfo } from '../../../pluginInterface'

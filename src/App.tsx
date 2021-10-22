@@ -6,6 +6,7 @@ import { getFigureData, useWindowDimensions } from 'figurl';
 import WorkspaceComponent from './WorkspaceComponent/WorkspaceComponent'
 import { MuiThemeProvider } from '@material-ui/core';
 import theme from './theme'
+import './localStyles.css'
 
 type SortingViewData = {
   type: 'workspace',

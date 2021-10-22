@@ -11,6 +11,5 @@ export {default as TaskStatusView} from './TaskStatusView'
 export {default as usePureCalculationTask} from './usePureCalculationTask'
 export {default as runPureCalculationTaskAsync} from './runPureCalculationTaskAsync'
 export {default as runQueryTaskAsync} from './runQueryTaskAsync'
-export {default as useFetchCache} from './useFetchCache'
 
 startListeningToParent()

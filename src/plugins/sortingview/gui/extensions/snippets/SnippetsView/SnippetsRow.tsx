@@ -1,10 +1,11 @@
 import { GridList, GridListTile } from '@material-ui/core';
-import { runPureCalculationTaskAsync, useFetchCache } from 'figurl';
+import { runPureCalculationTaskAsync } from 'figurl';
 import React, { FunctionComponent, useMemo } from 'react';
 import { applyMergesToUnit, Recording, Sorting, SortingCuration, SortingSelection, SortingSelectionDispatch } from "../../../pluginInterface";
 import SnippetBox from './SnippetBox';
 import sortingviewTaskFunctionIds from 'plugins/sortingview/sortingviewTaskFunctionIds';
 import { getElectrodesAspectRatio } from '../../common/sharedCanvasLayers/setupElectrodes';
+import useFetchCache from 'plugins/sortingview/gui/commonComponents/useFetchCache';
 
 
 type Props = {

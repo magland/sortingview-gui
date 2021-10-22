@@ -1,7 +1,8 @@
-import { runPureCalculationTaskAsync, useFetchCache } from "figurl"
+import { runPureCalculationTaskAsync } from "figurl"
 import { useMemo } from "react"
 import { getArrayMax, getArrayMin } from "../../common/utility"
 import sortingviewTaskFunctionIds from "plugins/sortingview/sortingviewTaskFunctionIds"
+import useFetchCache from "plugins/sortingview/gui/commonComponents/useFetchCache"
 
 export type SpikeAmplitudesData = {
     getSpikeAmplitudes: (unitId: number | number[]) => {timepoints: number[], amplitudes: number[], minAmp: number, maxAmp: number} | undefined | null
