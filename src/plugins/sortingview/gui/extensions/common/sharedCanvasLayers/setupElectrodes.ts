@@ -72,7 +72,8 @@ const setupVerticalElectrodes = ({width, height, electrodeIds}: {width: number, 
     const electrodeBoxes: ElectrodeBox[] = electrodeIds.map((eid, ii) => {
         // The vertical position of the ii^th electrode
         // scaled to be between 0 and 1
-        const y = (0.5 + ii) / (n + 1)
+        // const y = (0.5 + ii) / (n + 1)
+        const y = (0.5 + n - 1 - ii) / (n + 1)
         
         // The rectangle which goes from x=0-1
         const rect = {xmin: 0, xmax: 1, ymin: y - 0.5 / (n + 1), ymax: y + 0.5 / (n + 1)}
